@@ -1,52 +1,117 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900);
-body{
-  background-color: #F69680;
-  color:#2E1263;
-  font-size: 120%;
-  font-family: "Source Code Pro";
-  font-weight: 200;
- 
+/* CSS design originally by @jofpin, tweaked by Colt Steele */
+@import url(https://fonts.googleapis.com/css?family=Raleway|Varela+Round|Coda);
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-h1 {
-  font-weight: 200;
-  padding-bottom: 0;
-  font-size: 3em;
-  text-transform: uppercase;
-  border-top: 5px solid;
+.box {
+  background-color: #e8dbd5;
+  margin: 0 auto;
+  width: 50%;
+  padding: 20px;
+  margin-bottom: 50px;
 }
-button {
-    margin: 30px auto 0;
-    padding: 20px 25px;
-  background-color: #F69680;
-    color: #fff;
-    font-size:20px;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-  outline: none;
-    overflow: hidden;
-    letter-spacing: .08em;
-    border-radius: 0;
-  border: 2px solid #2E1263;
-  color: #2E1263;
+.fetch{
+  background-color: #683e42;
+  padding: 10px;
+    color: white;
+    font-weight: bold;
 }
-button:hover {
-  transition: 0.3s;
-  background: #2E1263;
-  color: #F69680;
+.center{
+  margin: 0 auto;
 }
-img {
-  height: 300px;
-  border-radius: 50%;
+.btn-form{
+  padding: 10px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #d31d0f;
+  border-radius: 6px;
   border: none;
-  margin: none;
-  padding: none
 }
-.container {
+input[type=text]{
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+.title {
+  color: #2c3e50;
+  font-family: "Coda", sans-serif;
+  text-align: center;
+}
+.user-profile {
+  margin: auto;
+	width: 27em; 
+  height: 11em;
+  background: #fff;
+  border-radius: .3em;
+}
+
+.user-profile  #fullname {
+  margin: auto;
+  margin-top: -4.40em;
+  margin-left: 5.80em;
+  color: #16a085;
+  font-size: 1.53em;
+  font-family: "Coda", sans-serif;
+  font-weight: bold;
+}
+
+#username {
+  margin: auto;
+  display: inline-block;
+  margin-left: 10.43em;
+  color: #3498db;
+  font-size: .87em;
+  font-family: "varela round", sans-serif;
+}
+
+.user-profile > .description {
+  margin: auto;
+  margin-top: 1.35em;
+  margin-right: 3em;
+  width: 18em;
+  color: #7f8c8d;
+  font-size: .87em;
+  font-family: "varela round", sans-serif;
+}
+
+.user-profile > img#avatar {
+	padding: .7em;
+  margin-left: .3em;
+  margin-top: .3em;
+  height: 6.23em;
+  width: 6.23em;
+  border-radius: 18em;
+}
+
+
+.footer {
+	margin: 2em auto;
+	height: 3.70em;
+  background: #16a085;
+  text-align: center;
+  border-radius: 0 0 .3em .3em;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  transition: background 0.1s;
 }
+
 button {
-  margin: 20px;
+  color: white;
+  font-family: "Coda", sans-serif;
+  text-align: center;
+  font-size: 20px;
+  background: none;
+  outline: none;
+  border: 0;
+}
+
+.footer:hover {
+  background: #1abc9c;
 }
